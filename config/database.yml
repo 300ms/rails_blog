@@ -9,9 +9,7 @@ default: &default
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
   timeout: 5000
   host: localhost
-  username: postgresql
-  password: 136479asd
-
+  
 development:
   <<: *default
   database: db/development.sqlite3
